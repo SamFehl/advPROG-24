@@ -10,32 +10,68 @@
     font-size: large;
     color: rgb(179, 15, 15);
     font-weight: lighter;
+    font-style: italic;
 }
 
 .s-txtbx{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 16px;
-    border-width: 1px;
+    color:darkgrey;
+    border-width: 2px;
     border-style: solid;
-    border-color: antiquewhite;
+    border-color:  rgb(145, 146, 147);
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 8px;
+
+}
+
+.s-txtbx:focus {
+    background-color: rgb(195, 235, 248);
 }
 
 .l-txtbx{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 16px;
-    border-width: 1px;
+    color:darkgrey;
+    border-width: 2px;
     border-style: solid;
-    border-color: antiquewhite;
+    border-color: rgb(145, 146, 147);
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 213px;
+    border-radius: 8px;
+}
+
+.l-txtbx:focus {
+    background-color: rgb(195, 235, 248);
+}
+
+.button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    color:white;
+    background-color: blue;
+    border-width: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 171px;
+    padding-right: 171px;
     border-radius: 8px;
 }
 
 .button:hover {
     opacity: 0.7;
+}
+
+.image {
+    opacity: 0.01;
+}
+
+.image:hover {
+    opacity: 1;
+    transition: 0.25s;
 }
