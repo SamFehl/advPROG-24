@@ -1,0 +1,41 @@
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    color: black;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    color: rgb(179, 15, 15);
+    font-weight: lighter;
+}
+
+.s-txtbx{
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: antiquewhite;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+}
+
+.l-txtbx{
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: antiquewhite;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
