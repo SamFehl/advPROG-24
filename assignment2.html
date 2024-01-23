@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 2</title>
+        <!--<link rel="style-assignment2" type="text/css" href="./css/style-assignment2.css">-->
+    </head>
+    <style>
+        .title{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: xx-large;
+            color: black;
+            font-weight: bold;
+        }
+
+        .subtitle{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+            color: rgb(179, 15, 15);
+            font-weight: lighter;
+            font-style: italic;
+        }
+
+        .s-txtbx{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 16px;
+            color:darkgrey;
+            border-width: 2px;
+            border-style: solid;
+            border-color:  rgb(145, 146, 147);
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 8px;
+
+        }
+
+        .s-txtbx:focus {
+            background-color: rgb(195, 235, 248);
+        }
+
+        .l-txtbx{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 16px;
+            color:darkgrey;
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(145, 146, 147);
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 15px;
+            padding-right: 213px;
+            border-radius: 8px;
+        }
+
+        .l-txtbx:focus {
+            background-color: rgb(195, 235, 248);
+        }
+
+        .button {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 16px;
+            color:white;
+            background-color: blue;
+            border-width: 0px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 171px;
+            padding-right: 171px;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            opacity: 0.7;
+        }
+
+        .image {
+            opacity: 0.01;
+        }
+
+        .image:hover {
+            opacity: 1;
+            transition: 0.25s;
+        }
+    </style>
+    <body>
+        <p class="title">Life Insurance Scam Sign Up</p>
+        <p class="subtitle">Make money fast! Lose money faster!</p>
+        <input type="text" class="s-txtbx" placeholder="First">
+        <input type="text" class="s-txtbx" placeholder="Last">
+        <br><br>
+        <input type="text" class="l-txtbx" placeholder="City">
+        <br><br>
+        <input type="text" class="s-txtbx" placeholder="State">
+        <input type="text" class="s-txtbx" placeholder="Zipcode">
+        <br><br>
+        <input type="text" class="l-txtbx" placeholder="Email">
+        <br><br>
+        <input type="text" class="l-txtbx" placeholder="Phone Number">
+        <br><br>
+        <input type="text" class="l-txtbx" placeholder="Social Security Number">
+        <br><br>
+        <button class="button" onclick="alert('really? you fell for that?');">
+            Sign Up
+        </button>
+        <br><br>
+        <img src="./img/troll-face.webp" class="image" width="390px">
+    </body>
+</html>
