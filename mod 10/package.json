@@ -1,0 +1,23 @@
+{
+  "name": "testframework",
+  "version": "1.0.0",
+  "description": "Sample QA App",
+  "main": "ppu.ts",
+  "scripts": {
+    "test": "nyc mocha --r ts-node/register 'test/**test.ts'",
+    "test2": "node --loader ts-node/esm test/**testspec.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.13",
+    "@types/mocha": "^10.0.6",
+    "chai": "^5.1.0",
+    "mocha": "^10.3.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "init": "^0.1.2",
+    "nyc": "^15.1.0"
+  }
+}
