@@ -1,7 +1,7 @@
 import React, { useState, Component } from 'react';
 import './TicTacToe.css';
 
-export const TicTacToe = () => {
+const TicTacToe = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
   const [winner, setWinner] = useState(null);
@@ -95,7 +95,7 @@ export const TicTacToe = () => {
 
 
 
-export default class Counter extends Component {
+class Counter extends Component {
   constructor(props) {
     super(props);
     this.state = { count1: 0, count2: 0};
@@ -113,7 +113,7 @@ export default class Counter extends Component {
   }
 }
 
-//export default TicTacToe;
+export default TicTacToe;
 
 /*
 import React from 'react';
