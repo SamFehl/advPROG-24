@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 import './TicTacToe.css';
 
-const TicTacToe = () => {
+export const TicTacToe = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
   const [winner, setWinner] = useState(null);
@@ -93,7 +93,27 @@ const TicTacToe = () => {
   );
 };
 
-export default TicTacToe;
+
+
+export default class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count1: 0, count2: 0};
+  }
+
+  render() {
+    return (
+      <div>
+        <p className='text'>Player 1: {this.state.count1}</p>
+        <button className='counters' onClick={() => this.setState({ count1: this.state.count1 + 1})}>Increment</button>
+        <p className='text'>Player 2: {this.state.count2}</p>
+        <button className='counters' onClick={() => this.setState({ count2: this.state.count2 + 1})}>Increment</button>
+      </div>
+    );
+  }
+}
+
+//export default TicTacToe;
 
 /*
 import React from 'react';
@@ -125,14 +145,16 @@ import React, { Component } from 'react';
 class Counter extends Component {
   constructor(props) {
     super(props);
-    this.state = { count: 0};
+    this.state = { count1: 0, count2: 0};
   }
 
   render() {
     return (
       <div>
-        <p>Count: {this.state.count}</p>
-        <button onClick={() => this.setState({ count: this.state.count + 1})}>Increment</button>
+        <p>Player 1: {this.state.count1}</p>
+        <button onClick={() => this.setState({ count1: this.state.count1 + 1})}>Increment</button>
+        <p>Player 2: {this.state.count2}</p>
+        <button onClick={() => this.setState({ count2: this.state.count2 + 1})}>Increment</button>
       </div>
     );
   }
