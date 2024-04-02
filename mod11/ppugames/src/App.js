@@ -78,8 +78,7 @@ const getWinner = () => {
   //ADD CLASS NAMES IN CSS FILE
   return (
     <div className="game">
-      <h1 className="title1">Pic Pac Uoe</h1>
-      <h2 className="title2">PPU Tic Tac Toe</h2>
+      <h1 className="title">Pic Pac Uoe - Tic Tac Toe for PPU Students</h1>
       <div className="winnerBoard" id="winnerBoard">{getWinner()}</div>
       <div className="game-board">
         <div className="board-row">
