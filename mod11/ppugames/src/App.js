@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { useState } from 'react';
 import './TicTacToe.css';
 
 const TicTacToe = () => {
@@ -10,7 +10,7 @@ const TicTacToe = () => {
     if (winner || board[index]) return;
 
     const newBoard = [...board];
-    newBoard[index] = xIsNext ? 'X' : 'O';
+    newBoard[index] = xIsNext ? 'P' : 'U';
     setBoard(newBoard);
 
     if(calculateWinner(newBoard)) {
@@ -55,19 +55,32 @@ const TicTacToe = () => {
     setWinner(null);
   };
 
+const getWinner = () => {
+  if (winner) {
+    document.getElementById("winnerBoard").style.display = "block";
+    return `${winner} wins!`;
+  }
+  else {
+    document.getElementById("winnerBoard").style.display = "none";
+  }
+}
+
   const getStatus = () => {
     if (winner) {
       return `Winner: ${winner}`;
     } else if (board.every((square) => square !== null)) {
       return 'Draw';
     } else {
-      return `Next player: ${xIsNext ? 'X' : 'O'}`;
+      return `Next player: ${xIsNext ? 'P' : 'U'}`;
     }
   };
 
   //ADD CLASS NAMES IN CSS FILE
   return (
     <div className="game">
+      <h1 className="title1">Pic Pac Uoe</h1>
+      <h2 className="title2">PPU Tic Tac Toe</h2>
+      <div className="winnerBoard" id="winnerBoard">{getWinner()}</div>
       <div className="game-board">
         <div className="board-row">
           {renderSquare(0)}
@@ -93,25 +106,4 @@ const TicTacToe = () => {
   );
 };
 
-class Counter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { count1: 0, count2: 0};
-  }
-
-  render() {
-    return (
-      <div>
-        <p className='text'>Player 1: {this.state.count1}</p>
-        <button className='counters' onClick={() => this.setState({ count1: this.state.count1 + 1})}>Add</button>
-        <button className='counters' onClick={() => this.setState({ count1: this.state.count1 - 1})}>Subtract</button>
-        <p className='text'>Player 2: {this.state.count2}</p>
-        <button className='counters' onClick={() => this.setState({ count2: this.state.count2 + 1})}>Add</button>
-        <button className='counters' onClick={() => this.setState({ count2: this.state.count2 - 1})}>Subtract</button>
-      </div>
-    );
-  }
-}
-
 export default TicTacToe;
-//export default Counter;
