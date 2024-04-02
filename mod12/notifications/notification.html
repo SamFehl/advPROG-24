@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <!-- Reference to JS Files -->
+        <script src="./js/notifications.js"></script>
+        <script src="./js/notify-alerts.js"></script>
+        <script src="./js/sw.js"></script>
+        <!-- Reference to CS File -->
+        <link rel="stylesheet" type="text/css" href="./css/styles.css"></script>
+        <title>Notification 2</title>
+    </head>
+    <body>
+        <!-- Input Container -->
+        <div className="input-container">
+            <input type="text">
+            <button type="submit" onClick="submitNotification()">Submit Notification</button>
+        </div>
+        <!-- Notification Container -->
+        <div className="notification-container">
+            <button className="notification-button" onClick="showNotification(notificationText)">Show Notifications</button>
+        </div>
+    </body>
+</html>

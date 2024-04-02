@@ -53,6 +53,7 @@ const TicTacToe = () => {
     setBoard(Array(9).fill(null));
     setXIsNext(true);
     setWinner(null);
+    document.getElementById("winnerBoard").style.display = "none";
   };
 
 const getWinner = () => {
@@ -60,9 +61,6 @@ const getWinner = () => {
     document.getElementById("winnerBoard").style.display = "block";
     return `${winner} wins!`;
   }
-  /*else {
-    document.getElementById("winnerBoard").style.display = "none";
-  }*/
 }
 
   const getStatus = () => {

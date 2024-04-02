@@ -1,0 +1,19 @@
+.notification-container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 100px;
+    overflow: hidden;
+}
+
+.notification-button {
+    padding: 10px 20px;
+    background-color: darkslategrey;
+    color:antiquewhite;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+    position: fixed;
+    top:20px;
+    left:20px;
+}
