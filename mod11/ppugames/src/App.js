@@ -60,9 +60,9 @@ const getWinner = () => {
     document.getElementById("winnerBoard").style.display = "block";
     return `${winner} wins!`;
   }
-  else {
+  /*else {
     document.getElementById("winnerBoard").style.display = "none";
-  }
+  }*/
 }
 
   const getStatus = () => {
