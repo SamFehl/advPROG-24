@@ -10,6 +10,36 @@
     border: 1px solid #333;
 }
 
+.game-status {
+    background: #689f20;
+    border: 0px solid #000000;
+    font-size: 30px;
+    font-weight: bolder;
+    color:rgb(217, 222, 218);
+    line-height: 50px;
+    height: 50px;
+    width: 250px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+}
+
+.game-reset {
+    background: #689f20;
+    border: 0px solid #000000;
+    font-size: 30px;
+    font-weight: bolder;
+    color:rgb(217, 222, 218);
+    line-height: 50px;
+    height: 50px;
+    width: 250px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+}
+
 .board-row:after {
     clear: both;
     content: '';
@@ -45,7 +75,7 @@
 }
 
 .counters {
-    background: seagreen;
+    background: #689f20;
     border: 0px solid #000000;
     float:none;
     font-size: 15px;
@@ -53,7 +83,7 @@
     height: 30px;
     width: 90px;
     text-align: center;
-    color: burlywood;
+    color: #000000;
     margin-left: 100px;
 }
 
@@ -64,6 +94,6 @@
     height: 30px;
     width: 90px;
     text-align: center;
-    color: burlywood;
+    color: #000000;
     margin-left: 100px;
 }

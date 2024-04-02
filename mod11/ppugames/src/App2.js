@@ -113,5 +113,5 @@ class Counter extends Component {
   }
 }
 
-export default TicTacToe;
-//export default Counter;
+//export default TicTacToe;
+export default Counter;
