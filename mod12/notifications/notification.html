@@ -1,22 +1,22 @@
 <html>
     <head>
         <!-- Reference to JS Files -->
-        <script src="./js/notifications.js"></script>
         <script src="./js/notify-alerts.js"></script>
         <script src="./js/sw.js"></script>
         <!-- Reference to CS File -->
-        <link rel="stylesheet" type="text/css" href="./css/styles.css"></script>
+        <link rel="stylesheet" type="text/css" href="/mod12/notifications/css/styles.css"></script>
         <title>Notification 2</title>
     </head>
     <body>
         <!-- Input Container -->
         <div className="input-container">
-            <input type="text">
-            <button type="submit" onClick="submitNotification()">Submit Notification</button>
+            Input Notification:
+            <input type="text" id="notifSub">
         </div>
+        <br>
         <!-- Notification Container -->
         <div className="notification-container">
-            <button className="notification-button" onClick="showNotification(notificationText)">Show Notifications</button>
+            <button className="notification-button" onClick="showNotification()">Show Notifications</button>
         </div>
     </body>
 </html>
