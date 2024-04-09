@@ -12,11 +12,10 @@ body {
     color:rgb(211, 192, 24);
     font-size: 50px;
     position: center;
-    transition: 0.2s;
 }
 
-.input-container:focus {
-    font-size: 20px;
+.input-container:focus-within {
+    font-size: 25px;
     transition: 0.2s;
 }
 
