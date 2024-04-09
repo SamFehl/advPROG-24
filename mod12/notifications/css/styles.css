@@ -1,35 +1,57 @@
-.input-container {
-    display:flex;
-    align-items:center;
+body {
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 100px;
-    overflow: hidden;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#222222;
+  }
+
+.input-container { 
+    color:rgb(211, 192, 24);
+    font-size: 50px;
+    position: center;
+    transition: 0.2s;
 }
 
-.status-container {
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    height: 100px;
-    overflow: hidden;
+.input-container:focus {
+    font-size: 20px;
+    transition: 0.2s;
 }
 
-.notification-container {
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    height: 100px;
-    overflow: hidden;
+.input-text {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 0px 0;
+    outline:0;
+    border: none;
+    border-bottom: 2px solid rgb(211, 192, 24);
+    background-color:transparent;
+    color:rgb(211, 192, 24);
+    font-size: 50px;
+    position: center;
+    transition: 0.2s;
+}
+
+.input-text:focus {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    outline:0;
+    border-bottom: 2px solid rgb(211, 192, 24);
+    background-color:transparent;
+    font-size: 75px;
+    transition: 0.2s;
 }
 
 .notification-button {
-    padding: 10px 20px;
-    background-color: darkslategrey;
-    color:antiquewhite;
+    color:white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    outline:0;
     border:none;
-    border-radius: 5px;
-    cursor:pointer;
-    position: fixed;
-    top:20px;
-    left:20px;
+    background-color:cadetblue;
+    font-size:30px;
+    position:center;
 }
