@@ -20,7 +20,7 @@ const requestNotificationPermission = async () => {
         throw new Error("Notification permission not granted")
     }
     else {
-        new Notification("PTI Competition is on April 16th");
+        new Notification("Notifications are enabled");
     }
 }
 
