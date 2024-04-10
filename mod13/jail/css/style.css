@@ -1,0 +1,42 @@
+:root {
+    --orange: rgb(247,145,32);
+    --green: rgb(3,103,97);
+    --white: rgb(230, 230, 230);
+    --blue: rgb(26,69,126);
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0px 0;
+}
+
+.header {
+    overflow:hidden;
+    top: 0;
+    width: 100%;
+    background-color:var(--green);
+    color: var(--orange);
+    height:10%;
+}
+
+.header-buttons {
+    float:right;
+    display:block;
+    background-color: var(--green);
+    color: var(--orange);
+    text-align: center;
+    
+    border:none;
+    transition-duration: 0.2s;
+}
+
+.header-buttons:hover {
+    background-color:var(--orange);
+    color:var(--green);
+}
+
+.name {
+    text-align: left;
+    margin-top:0px;
+}
