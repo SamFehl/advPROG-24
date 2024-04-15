@@ -53,3 +53,9 @@ body {
 .section-head {
     margin-top:5%;
 }
+
+.type-writer {
+    color:var(--green);
+    font-size:75px;
+    margin-left:5%;
+}
