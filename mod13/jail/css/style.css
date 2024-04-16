@@ -1,13 +1,13 @@
 :root {
-    --orange: rgb(247,145,32);
-    --green: rgb(3,103,97);
-    --white: rgb(230, 230, 230);
-    --blue: rgb(26,69,126);
+  --orange: rgb(247,145,32);
+  --green: rgb(3,103,97);
+  --white: rgb(230, 230, 230);
+  --blue: rgb(26,69,126);
 }
 
 body {
-    background-color: var(--white);
-    margin:0;
+  background-color: var(--white);
+  margin:0;
 } 
 
 /* Firefox*/
@@ -49,107 +49,129 @@ body {
   }
 */  
 .nav {
-    overflow:hidden;
-    display:flex;
-    justify-content: space-between;
-    position:fixed;
-    z-index:1;
-    top: 0;
-    width: 100%;
-    background-color:var(--green);
-    color: var(--white);
-    height:10%;
+  overflow:hidden;
+  display:flex;
+  justify-content: space-between;
+  position:fixed;
+  z-index:1;
+  top: 0;
+  width: 100%;
+  background-color:var(--green);
+  color: var(--white);
+  height:10%;
 }
 
 .name {
-    justify-content:flex-start;
-    text-align: left;
-    margin: 5px;
-    font-size:65px;
-    font-family: "Bebas Neue", monospace;
+  justify-content:flex-start;
+  text-align: left;
+  font-size:65px;
+  margin-left: 2%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: "Bebas Neue", monospace;
 }
 
 .nav-btn {
-    justify-content: flex-end;
-    display:block;
-    background-color: var(--green);
-    color: var(--white);
-    text-align: center;
-    border:none;
-    transition-duration: 0.2s;
-    height:10%;
-    width:15%;
-    font-size:25px;
-    padding: 35px 0px;
-    text-decoration: none;
-    font-family: "Bebas Neue", monospace;
+  background-color: var(--green);
+  color: var(--white);
+  display:block;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+   
+  height:100%;
+  width:10%;
+  font-size:35px;
+  border:none;
+  text-decoration: none;
+  font-family: "Bebas Neue", monospace;
+  transition-duration: 0.2s;
 }
 
 .nav-btn:hover {
-    background-color:var(--orange);
-    color:var(--green);
+  background-color:var(--orange);
+  color:var(--green);
 }
 
 .section-head {
-    padding-top: 4%;
+  padding-top: 4%;
+  padding-bottom: 0%;
+  margin-bottom: 0 0 0 0;
 }
 
 .type-writer {
-    min-height: 250px;
-    color:var(--white);
-    font-size:75px;
-    background-color: var(--orange);
-    border: 0px;
-    padding-top: 3%;
-    padding-bottom: 2%;
-    --mask:
-      radial-gradient(68.82px at 50% calc(100% - 96px),#000 99%,#0000 101%) calc(50% - 80px) 0/160px 100%,
-      radial-gradient(68.82px at 50% calc(100% + 56px),#0000 99%,#000 101%) 50% calc(100% - 40px)/160px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+  color:var(--white);
+  background-color: var(--orange);
+  font-family: "Bai Jamjuree", monospace;
+  min-height: 250px;
+  font-size: 3.5vw;
+  padding-top: 4%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+
+  --mask:
+    radial-gradient(68.82px at 50% calc(100% - 96px),#000 99%,#0000 101%) calc(50% - 80px) 0/160px 100%,
+    radial-gradient(68.82px at 50% calc(100% + 56px),#0000 99%,#000 101%) 50% calc(100% - 40px)/160px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }
 
 h1 {
-    color:var(--green);
-    font-family: "Bebas Neue", monospace;
-    text-align: center;
+  color:var(--green);
+  font-family: "Bebas Neue", monospace;
+  text-align: center;
+  font-size: 10vw;
 }
 
 h2 {
-    color:var(--blue);
-    font-family: "Bebas Neue", monospace;
-    text-align: center;
+  color:var(--blue);
+  font-family: "Bebas Neue", monospace;
+  text-align: center;
+  font-size: 5vw;
+  margin-top: 0;
+  padding-top: 1%;
 }
 
 h3 {
-    color: var(--orange);
-    font-family: "Bai Jamjuree", monospace;
-    text-align: center;
+  color: var(--orange);
+  font-family: "Bai Jamjuree", monospace;
+  text-align: center;
+  font-size: 2.8vw;
 }
 
-p {
-    color:black;
-    font-family: "Bai Jamjuree", monospace;
-    text-align: center;
+.text-block {
+  color:black;
+  font-family: "Bai Jamjuree", monospace;
+  text-align: center;
+  font-size: 1.6vw;
 }
 
 .img-btn {
-    max-width: 200px;
-    padding:75px;
+  max-width: 200px;
+  padding:75px;
 }
 
 .scroll-container{
-    overflow: auto;
-    white-space: nowrap;
-    padding: 5px 70px 5px 20px;
-    background: transparent;
-    height: 100%;
-    border-radius:0px;
-    background-color: var(--green);
-  }
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px 70px 5px 20px;
+  background: transparent;
+  height: 100%;
+  border-radius:0px;
+  background-color: var(--green);
+}
   
-  .gridscroll img {
-    margin-left:auto;
-    margin-right: auto;
-    display: inline-block;
-  }
+.gridscroll img {
+  margin-left:auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.page-bottom {
+  background-color: var(--green);
+  text-align: center;
+  font-family: "Bai Jamjuree", monospace;
+  color: var(--white);
+}

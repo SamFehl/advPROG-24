@@ -1,5 +1,5 @@
 //Typewriter Variables
-const texts = ["I am a programmer.", "I am an accountant.", "I am a student.", "I am Samuel Fehl."];
+const texts = ["I am a programmer.", "I am an accountant.", "I am a student.", "I am Samuel Fehl.", "I am the president.", "I am a programmer.", "I am an accountant.", "I am a student.", "I am Samuel Fehl.","I am a programmer.", "I am an accountant.", "I am a student.", "I am Samuel Fehl.","I am a programmer.", "I am an accountant.", "I am a student.", "I am Samuel Fehl.", "I am the largest charitable donor in southwest Virgina", "but not the largest charitable donor in south West Virginia", "I am a programmer.", "I am an accountant.", "I am a student.", "I am Samuel Fehl.","I am a programmer.", "I am an accountant.", "I am a student.", "I am Samuel Fehl.","I am a programmer.", "I am an accountant.", "I am a student.", "I am Samuel Fehl."];
   let index = 0;
   let charIndex = 0;
   let isDeleting = false;
