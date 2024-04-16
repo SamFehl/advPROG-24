@@ -16,17 +16,18 @@ body {
     display:flex;
     justify-content: space-between;
     position:fixed;
+    z-index:1;
     top: 0;
     width: 100%;
     background-color:var(--green);
     color: var(--orange);
-    height:10%;
+    height:11%;
 }
 
 .name {
     justify-content:flex-start;
     text-align: left;
-    margin: 10px;
+    margin: 5px;
     font-size:65px;
 }
 
@@ -55,7 +56,33 @@ body {
 }
 
 .type-writer {
+    min-height: 200px;
     color:var(--green);
     font-size:75px;
-    margin-left:5%;
+    background-color: var(--orange);
+    --mask:
+      radial-gradient(68.82px at 50% calc(100% - 96px),#000 99%,#0000 101%) calc(50% - 80px) 0/160px 100%,
+      radial-gradient(68.82px at 50% calc(100% + 56px),#0000 99%,#000 101%) 50% calc(100% - 40px)/160px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+
+h1 {
+    color:var(--green);
+    font-family: "American Typewriter", serif;
+}
+
+h2 {
+    color:var(--blue);
+    font-family: "Andale Mono", "Lucida Console", monospace;
+}
+
+h3 {
+    color: var(--orange);
+    font-family: "Andale Mono", "Lucida Console", monospace;
+}
+
+p {
+    color:black;
+    font-family: "Lucida Console","Andale Mono", monospace;
 }

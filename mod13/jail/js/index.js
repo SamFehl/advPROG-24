@@ -30,3 +30,4 @@ const texts = ["I am a programmer.", "I am an accountant.", "I am a student.", "
 document.addEventListener("DOMContentLoaded", function() {
   type();
 });
+
