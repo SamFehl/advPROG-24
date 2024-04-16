@@ -49,45 +49,37 @@ body {
   }
 */  
 .nav {
-  overflow:hidden;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  position:fixed;
-  z-index:1;
+  align-items: center;
+  position: fixed;
   top: 0;
   width: 100%;
-  background-color:var(--green);
+  background-color: var(--green);
   color: var(--white);
-  height:10%;
+  height: 10%;
+  padding: 0 20px;
+  z-index: 1;
 }
 
 .name {
-  justify-content:flex-start;
-  text-align: left;
   font-size:65px;
   margin-left: 2%;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   font-family: "Bebas Neue", monospace;
 }
 
 .nav-btn {
   background-color: var(--green);
   color: var(--white);
-  display:block;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-   
-  height:100%;
-  width:10%;
-  font-size:35px;
-  border:none;
   text-decoration: none;
   font-family: "Bebas Neue", monospace;
+  font-size: 35px;
+  padding: 20px;
   transition-duration: 0.2s;
+}
+
+.nav-btn:last-child {
+  margin-right: 2%;
 }
 
 .nav-btn:hover {
