@@ -7,11 +7,40 @@
 
 body {
     background-color: var(--white);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin:0px 0;
-}
+} 
 
-.header {
+*::-webkit-scrollbar {
+    height: 5px;
+    width: 2px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: var(--white);
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: var(--white);
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: var(--white);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: var(--green);
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: var(--green);
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: var(--green);
+  }
+  
+.nav {
     overflow:hidden;
     display:flex;
     justify-content: space-between;
@@ -20,7 +49,7 @@ body {
     top: 0;
     width: 100%;
     background-color:var(--green);
-    color: var(--orange);
+    color: var(--white);
     height:11%;
 }
 
@@ -29,13 +58,14 @@ body {
     text-align: left;
     margin: 5px;
     font-size:65px;
+    font-family: "Bebas Neue", monospace;
 }
 
-.header-buttons {
+.nav-btn {
     justify-content: flex-end;
     display:block;
     background-color: var(--green);
-    color: var(--orange);
+    color: var(--white);
     text-align: center;
     border:none;
     transition-duration: 0.2s;
@@ -44,9 +74,10 @@ body {
     font-size:25px;
     padding: 35px 0px;
     text-decoration: none;
+    font-family: "Bebas Neue", monospace;
 }
 
-.header-buttons:hover {
+.nav-btn:hover {
     background-color:var(--orange);
     color:var(--green);
 }
@@ -57,7 +88,7 @@ body {
 
 .type-writer {
     min-height: 200px;
-    color:var(--green);
+    color:var(--white);
     font-size:75px;
     background-color: var(--orange);
     --mask:
@@ -69,20 +100,42 @@ body {
 
 h1 {
     color:var(--green);
-    font-family: "American Typewriter", serif;
+    font-family: "Bebas Neue", monospace;
 }
 
 h2 {
     color:var(--blue);
-    font-family: "Andale Mono", "Lucida Console", monospace;
+    font-family: "Bebas Neue", monospace;
 }
 
 h3 {
     color: var(--orange);
-    font-family: "Andale Mono", "Lucida Console", monospace;
+    font-family: "Bai Jamjuree", monospace;
 }
 
 p {
     color:black;
-    font-family: "Lucida Console","Andale Mono", monospace;
+    font-family: "Bai Jamjuree", monospace;
 }
+
+.img-btn {
+    max-width: 200px;
+    padding:30px;
+}
+
+.scroll-container{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px 70px 5px 20px;
+    background: transparent;
+    height: 100%;
+    border-radius:15px;
+  }
+  
+  .gridscroll{
+    display:inline-block;
+  }
+  
+  .gridscroll img {
+    margin-right:22px;
+  }
