@@ -115,6 +115,8 @@ h1 {
   font-family: "Bebas Neue", monospace;
   text-align: center;
   font-size: 10vw;
+  line-height: 1%;
+  margin:5% 5% 7% 5%;
 }
 
 h2 {
@@ -122,8 +124,9 @@ h2 {
   font-family: "Bebas Neue", monospace;
   text-align: center;
   font-size: 5vw;
-  margin-top: 0;
   padding-top: 1%;
+  line-height: 1%;
+  margin:5% 5% 5% 5%;
 }
 
 h3 {
@@ -131,6 +134,8 @@ h3 {
   font-family: "Bai Jamjuree", monospace;
   text-align: center;
   font-size: 2.8vw;
+  line-height: 0%;
+  margin:2% 5% 3% 5%;
 }
 
 .text-block {
@@ -138,6 +143,8 @@ h3 {
   font-family: "Bai Jamjuree", monospace;
   text-align: center;
   font-size: 1.6vw;
+  margin:2% 5% 3% 5%;
+  line-height: 100%;
 }
 
 .img-btn {
