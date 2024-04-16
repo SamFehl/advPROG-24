@@ -7,9 +7,17 @@
 
 body {
     background-color: var(--white);
-    margin:0px 0;
+    margin:0;
 } 
 
+/* Firefox*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--orange) var(--green);
+}
+
+/*Other Browsers*/
+/*
 *::-webkit-scrollbar {
     height: 5px;
     width: 2px;
@@ -39,7 +47,7 @@ body {
   *::-webkit-scrollbar-thumb:active {
     background-color: var(--green);
   }
-  
+*/  
 .nav {
     overflow:hidden;
     display:flex;
@@ -50,7 +58,7 @@ body {
     width: 100%;
     background-color:var(--green);
     color: var(--white);
-    height:11%;
+    height:10%;
 }
 
 .name {
@@ -83,14 +91,17 @@ body {
 }
 
 .section-head {
-    margin-top:5%;
+    padding-top: 4%;
 }
 
 .type-writer {
-    min-height: 200px;
+    min-height: 250px;
     color:var(--white);
     font-size:75px;
     background-color: var(--orange);
+    border: 0px;
+    padding-top: 3%;
+    padding-bottom: 2%;
     --mask:
       radial-gradient(68.82px at 50% calc(100% - 96px),#000 99%,#0000 101%) calc(50% - 80px) 0/160px 100%,
       radial-gradient(68.82px at 50% calc(100% + 56px),#0000 99%,#000 101%) 50% calc(100% - 40px)/160px 100% repeat-x;
@@ -101,26 +112,30 @@ body {
 h1 {
     color:var(--green);
     font-family: "Bebas Neue", monospace;
+    text-align: center;
 }
 
 h2 {
     color:var(--blue);
     font-family: "Bebas Neue", monospace;
+    text-align: center;
 }
 
 h3 {
     color: var(--orange);
     font-family: "Bai Jamjuree", monospace;
+    text-align: center;
 }
 
 p {
     color:black;
     font-family: "Bai Jamjuree", monospace;
+    text-align: center;
 }
 
 .img-btn {
     max-width: 200px;
-    padding:30px;
+    padding:75px;
 }
 
 .scroll-container{
@@ -129,13 +144,12 @@ p {
     padding: 5px 70px 5px 20px;
     background: transparent;
     height: 100%;
-    border-radius:15px;
-  }
-  
-  .gridscroll{
-    display:inline-block;
+    border-radius:0px;
+    background-color: var(--green);
   }
   
   .gridscroll img {
-    margin-right:22px;
+    margin-left:auto;
+    margin-right: auto;
+    display: inline-block;
   }
