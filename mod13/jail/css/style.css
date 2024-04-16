@@ -63,19 +63,31 @@ body {
 }
 
 .name {
-  font-size:65px;
-  margin-left: 2%;
+  background-color: var(--green);
+  color: var(--white);
+  height:100%;
+  width:25%;
+  text-decoration: none;
   font-family: "Bebas Neue", monospace;
+  font-size: 5vw;
+  transition-duration: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .nav-btn {
   background-color: var(--green);
   color: var(--white);
+  height:100%;
+  width:25%;
   text-decoration: none;
-  font-family: "Bebas Neue", monospace;
+  font-family: "Bai Jamjuree", monospace;
   font-size: 35px;
-  padding: 20px;
   transition-duration: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-btn:last-child {
