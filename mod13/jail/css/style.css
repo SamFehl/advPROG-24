@@ -30,11 +30,12 @@ body {
   background-color: var(--orange);
 }
 
-/* Firefox*/
+/* Firefox
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--orange) transparent;
 }
+*/
   
 .nav {
   display: flex;
